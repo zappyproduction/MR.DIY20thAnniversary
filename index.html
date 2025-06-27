@@ -60,7 +60,7 @@
         codeUrl: buildUrl + "/MR.DIY20thAnniversary.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "VInteractive",
-        productName: "V0014_MrDIYFloorInteractive",
+        productName: "MR.DIY20thAnniversary",
         productVersion: "0.1.0",
         showBanner: unityShowBanner,
       };
@@ -81,7 +81,7 @@
       // JS_FileSystem_Sync() behavior, but in future Unity version, this will be
       // expected to change.
 
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      //if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
 
         var meta = document.createElement('meta');
@@ -96,11 +96,11 @@
         // config.devicePixelRatio = 1;
 
 
-      } else {
+     // } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
-      }
+    //    canvas.style.width = "960px";
+    //    canvas.style.height = "600px";
+     // }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
 
